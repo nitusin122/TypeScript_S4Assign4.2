@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NameSpace Assignment</title>
+    <script type="text/javascript" src="bundle.js"></script>
+</head>
+<body>
+    <div id="resultDiv"></div>
+    <script type="text/javascript">
+       //Instance Creation
+        var myBike = { companyName: "Hero ", model: "Splendor iSmart", yearMf: 2016 };
+        
+        //Calling both Functions
+        document.getElementById('resultDiv').innerHTML =  VehicleNameSpace.getBikeDetails(myBike);
+        document.getElementById('resultDiv').innerHTML += "<br/><br/>" + VehicleNameSpace.getMileage(myBike, 102.5);
+
+    </script>
+</body>
+</html>
